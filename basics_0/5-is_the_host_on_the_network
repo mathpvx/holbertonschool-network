@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# pings an IP passed as arg
+# checks first arg is here
+if [ "$1" ]
+then
+# sets a timeout of 5sec for each attempt
+		ping -w 5 "$1"
+else
+# if wrong or no arg
+		echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
